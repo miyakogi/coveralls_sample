@@ -6,4 +6,5 @@ install:
 script:
   - py.test --cov calc
 after_success:
-  - coveralls codecov
+  - coveralls
+  - codecov
