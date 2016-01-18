@@ -1,0 +1,9 @@
+language: python
+python: "3.5"
+install:
+  - pip install pytest pytest-cov
+  - pip install coveralls codecov
+script:
+  - py.test --cov calc
+after_success:
+  - coveralls codecov
