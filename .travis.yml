@@ -4,7 +4,7 @@ install:
   - pip install pytest pytest-cov
   - pip install coveralls codecov
 script:
-  - py.test --cov calc
+  - py.test --cov .
 after_success:
   - coveralls
   - codecov
